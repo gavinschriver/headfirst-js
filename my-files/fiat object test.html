@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+  	var fiat = {
+  		make: "fiat",
+  		model: "500",
+      mileage: 50000,
+      started: false,
+      fuel: 0,
+
+      start: function () {
+        if (this.fuel == 0) {
+          alert("low fuel my duuude");
+        } else {
+          this.started = true;
+        } 
+      },
+
+      stop: function() {
+        this.started = false;
+      },
+
+  		drive: function() {
+  			if (this.started) {
+          if (this.fuel > 0) {
+            alert ("Zoom zoom!" );
+          this.fuel = this.fuel - 1;
+          } else { 
+          alert("Uh oh no gasss!!!");
+          this.stop();
+          } 
+        } else {
+            alert("You need to start the engine you dummm");
+        }
+  		},
+
+      addFuel: function(amount) {
+        this.fuel = this.fuel + amount;
+      }
+
+  	};
+
+    var cadi = {
+      make: "GM",
+      model: "Cadillac",
+      year: 1955,
+      color: "tan",
+      passengers: 5,
+      convertible: false,
+      mileage: 14459,
+
+      start: function () {
+        this.started = true;
+      },
+
+      stop: function() {
+        this.started = false;
+      },
+
+      drive: function() {
+        if (this.started) {
+          alert ("Zoom zoom!" );
+          } else {
+            alert("You need to start the engine you dummm");
+        }
+      }
+    };
+
+    var chevy = {
+      make: "Chevy",
+      model: "Bel Air",
+      year: 1957,
+      color: "red",
+      passengers: 2,
+      convertible: false,
+      mileage: 3493,
+
+      start: function () {
+        this.started = true;
+      },
+
+      stop: function() {
+        this.started = false;
+      },
+
+      drive: function() {
+        if (this.started) {
+          alert ("Zoom zoom!" );
+          } else {
+            alert("You need to start the engine you dummm");
+        }
+      }
+    };
+
+    var taxi = { 
+      make: "Webville",
+      model: "Taxi",
+      year: 1956,
+      color: "yellow",
+      passengers: 4,
+      convertible: false,
+      mileage: 194953,
+
+      start: function () {
+        if (fuel > 0) {
+        this.started = true;
+        } else {
+          alert("low fuel doggie");
+        } 
+      },
+
+      stop: function() {
+        this.started = false;
+      },
+
+      drive: function() {
+        if (this.started) {
+          alert ("Zoom zoom!" );
+          } else {
+            alert("You need to start the engine you dummm");
+        }
+      }
+    }
+
+  	fiat.start();
+    fiat.drive();
+    fiat.addFuel(1);
+    fiat.start();
+    fiat.drive();
+    fiat.drive();
+    fiat.stop();
+
+  </script>
+</head>
+
+<body>
+  
+</body>
+</html>

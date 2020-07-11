@@ -1,0 +1,46 @@
+		<!doctype html>
+
+		<html lang="en">
+		<head>
+		  <meta charset="utf-8">
+		  <title>planet dooommmm</title>
+		   <style>
+		  	.redtext {
+		  		color: red;
+		  	}
+		  </style>
+		  <script type="text/javascript">
+
+		  function init() {
+		  	var planet = document.getElementById("greenplanet");
+		  	var addList = document.createElement("li");
+		  	var newListNode = document.createTextNode ("Here's something for a list");
+
+		  	planet.innerHTML = "Red alert: we're all fuckt";
+		  	planet.setAttribute("class", "redtext");
+		  	planet.setAttribute("href", "http://www.goddamn.com");
+		  	addList.appendChild(newListNode);
+
+		  	var planetWithList = document.getElementById("redplanet");
+		  	planetWithList.appendChild(addList);
+
+		  }	
+
+		  	window.onload = init;
+	
+		  	
+		  </script>
+		</head>
+
+		<body>
+			<h1>Green Planet</h1>
+			<a id="greenplanet">All is well</a>
+
+			<h1>Red Planet</h1>
+			<p id="redplanet">Shits cool</p>
+
+			<h1>Blue Planet</h1>
+			<p id="blueplanet">It's all gravy dawggg</p>
+		  
+		</body>
+		</html>

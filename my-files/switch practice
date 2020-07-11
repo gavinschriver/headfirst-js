@@ -1,0 +1,30 @@
+		<!doctype html>
+
+		<html lang="en">
+		<head>
+		  <meta charset="utf-8">
+		  <title></title>
+		  <script type="text/javascript">
+		  	var guessRow = "A";
+		  	var formattedGuessRow;
+		  	switch(guessRow) {
+		  		case "A":
+		  		formattedGuessRow = 0;
+		  		break;
+		  		case "B":
+		  		formattedGuessRow = 1;
+		  		break;
+		  		case "C":
+		  		formattedGuessRow = 2;
+		  		break;
+		  	}
+
+		  	console.log(formattedGuessRow);
+
+		  </script>
+		</head>	
+
+		<body>
+		  
+		</body>
+		</html>	

@@ -1,0 +1,42 @@
+		<!doctype html>
+
+		<html lang="en">
+		<head>
+		  <meta charset="utf-8">
+		  <title></title>
+		  <script type="text/javascript">
+		  	function validate(phoneNumber) {
+
+		  		if (phoneNumber.length > 8 ||
+		  			phoneNumber.length < 7) {
+		  			return false;
+		  		}
+
+		  		if (phoneNumber.length === 7){
+		  			if (isNaN(phoneNumber)) {
+		  				return false;
+		  			}
+		  			else return true;
+		  		}
+		  		
+		  		else var values = phoneNumber.split("-");
+
+		  		if (isNaN(values[0]) || isNaN(values[1]) ) {
+		  			return false;
+		  		}
+
+		  		return (phoneNumber.charAt(3) === "-");	
+
+		  	}
+
+		  	var testNumber = prompt("please enter a number!");
+
+		  	console.log(validate(testNumber));
+
+		  </script>
+		</head>
+
+		<body>
+		  
+		</body>
+		</html>

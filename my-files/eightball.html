@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+  	var eightball = { index: 0,
+  					  advice: ["yes", "no", "maybe", "not a chance"],
+  					  shake: function() {
+  					  	this.index = this.index + 1;
+  					  	if (this.index >= this.advice.length) {
+  					  		this.index = 0;
+  					  	}
+  					  },
+  					  look: function() {
+  					  	return this.advice[this.index];
+  					  }
+
+  					};
+
+  	eightball.shake();
+  	console.log(eightball.look());
+  	eightball.shake();
+  	console.log(eightball.look());
+  	eightball.shake();
+  	console.log(eightball.look());
+  	eightball.shake();
+  	console.log(eightball.look());
+
+  </script>
+</head>
+
+<body>
+  
+</body>
+</html>

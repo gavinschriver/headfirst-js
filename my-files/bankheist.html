@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>bankheist</title>
+</head>
+
+<body>
+  <script>
+  	var balance = 10500;
+  	var cameraOn = true;
+
+  	function steal(availableBalance, amount) {
+  		cameraOn = false; 
+  		if (amount < availableBalance) {
+  			balance = balance - amount;
+  		}
+
+  		return amount; 
+  		cameraOn = true;
+  	}
+
+  	var amount = steal (balance, 1250);
+  	alert("Criminal you stole " + amount + "!");
+  	console.log(balance);
+  </script>
+</body>
+</html>

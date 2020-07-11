@@ -1,0 +1,39 @@
+		<!doctype html>
+
+		<html lang="en">
+		<head>
+		  <meta charset="utf-8">
+		  <title></title>
+		  <script type="text/javascript">
+		  	var userGuess = prompt("enter some stuff");
+
+		  	if (userGuess.length != 2) {
+		  		alert("Wrong andswerrr bro");
+		  	} else {
+		  		var guessRow = userGuess.substring(0, 1);
+		  		var guessColumn = userGuess.substring(1);
+		  		var formattedGuessRow;
+		  		switch(guessRow) {
+		  			case "A":
+		  			formattedGuessRow = 0;
+		  			break;
+		  			case "B":
+		  			formattedGuessRow = 1;
+		  			break;
+		  			case "C":
+		  			formattedGuessRow = 2;
+		  			break;
+		  		}
+		  			
+		  		formattedGuessFull = formattedGuessRow + guessColumn;
+
+		  		console.log(formattedGuessFull);
+
+		  	} 	
+		  </script>
+		</head>	
+
+		<body>
+		  
+		</body>
+		</html>

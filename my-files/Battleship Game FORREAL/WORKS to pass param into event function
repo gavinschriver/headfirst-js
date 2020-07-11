@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  
+  var bootylicious = "my rhymes";  
+
+  function init() {
+      var actionParagraph = document.getElementById("demo");
+      actionParagraph.onclick = mySickFunctionBro;
+      } 
+               
+  function mySickFunctionBro(someParam) {
+      someParam = bootylicious;
+      document.getElementById("newParagraph").innerHTML = `Go ahead put ${someParam} on trial.`;
+  }
+
+  window.onload = init;
+  
+  </script>
+
+</head>
+<body>
+
+<p>This example uses the HTML DOM to assign an "onclick" event to a p element.</p>
+
+<p id="demo">Click me.</p>
+
+<p id="newParagraph"></p>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Should Gavin apply to NSS?</title>
+	<meta charset="utf-8">
+	<script> 
+		var gavinSchriver = {
+			isGreatWithNumbers: false,
+			hasSomeDevExeprience: true,
+			selfMotivationScore: 7,
+			currentLifeDirectionScore: 4,
+			hasCareerConnections: "No! He needs to learn that part..."
+		};
+
+		function applyToNss(applicant) {
+			var shouldApply = false;
+			var goodFitIndex = applicant.selfMotivationScore + applicant.currentLifeDirectionScore;
+
+			if (goodFitIndex > 12) {
+				alert ("You're already set, you don't need bootcamp!");
+			} else if (goodFitIndex < 5) {
+				alert("Hmmm, you're probably not ready for this leap...");
+			} else if (applicant.isGreatWithNumbers == true || applicant.hasSomeDevExeprience == true) {
+				shouldApply = true;
+			} 
+			return shouldApply;
+		}
+
+		console.log(applyToNss(gavinSchriver));
+
+	</script>
+</head>
+</html>

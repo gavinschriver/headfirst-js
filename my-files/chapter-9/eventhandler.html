@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>I'm aLIVEE</title>
+    <style>
+    </style>
+    <script>
+      window.onload = init; // when the window loads, init will execute
+
+      function init () { // create a function called init
+
+          var images = document.getElementsByTagName("img"); //create a list of all elements in DOM with tag name "img"
+          for (var i = 0; i < images.length; i++) {
+              images[i].onmouseover = showAnswer;
+              images[i].onmouseout = rehideImg;
+          }   
+      };
+
+      function showAnswer(eventObj) {   // create a function called "showAnswer"
+          var image = eventObj.target;
+          var name = image.id;
+          name = name + ".jpg";
+          image.src = name;
+      };
+
+      function rehideImg (eventObj) {
+          var image = eventObj.target;
+          var name = image.id
+          image.src = name + "blur.jpg";
+      }
+
+      // line 19 could also be achieved by image.setAttribute("src", "zero.jpg");
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <h1 id="titleText">Cool image bro</h1>
+    </header>
+
+    <section class="imageGallery">
+      <img id="zero" src="zeroblur.jpg" />
+      <img id="one" src="oneblur.jpg" />
+      <img id="two" src="twoblur.jpg" />
+      <img id="three" src="threeblur.jpg" />
+      <img id="four" src="fourblur.jpg" />
+      <img id="five" src="fiveblur.jpg" />
+    </p>
+
+  </body>
+</html>

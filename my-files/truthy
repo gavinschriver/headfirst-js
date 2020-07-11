@@ -1,0 +1,17 @@
+		<!doctype html>
+
+		<html lang="en">
+		<head>
+		  <meta charset="utf-8">
+		  <title></title>
+		  <script type="text/javascript">
+		  	var text = "YOU SHOULD NEVER SHOUT WHILE TYPING";
+		  	var presentableText = text.toLowerCase();
+		  	conole.log(presentableText);
+		  </script>
+		</head>
+
+		<body>
+		  
+		</body>
+		</html>

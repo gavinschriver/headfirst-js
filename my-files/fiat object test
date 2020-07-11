@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+  	var fiat = {
+  		make: "fiat",
+  		model: "500",
+  		drive: function() {
+  			alert("zoom zooommzz");
+  		}
+  	}
+
+  	fiat.drive();
+  </script>
+</head>
+
+<body>
+  
+</body>
+</html>

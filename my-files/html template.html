@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+
+		var beanCounter = 10;
+
+		function getNumberOfItems (orderType) {
+
+			var beanCounter = 0;
+			if (orderType == "order") {
+				beanCounter = beanCounter + 2;
+			}
+
+			return beanCounter;
+		}
+
+		var newBeans = getNumberOfItems("order");
+		alert(newBeans);
+
+	</script>
+</head>
+<body>
+	
+</body>	
+</html>

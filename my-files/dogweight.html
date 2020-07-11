@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+  	var fido = {
+  		name: "Fido",
+  		weight: 48,
+  		breed: "Mutt"
+  	};
+
+  	function loseWeight(dog, amount) {
+  		dog.weight = dog.weight - amount;
+  		return dog
+  	}
+
+  	var userEntryDog = prompt("please enter a doge");
+  	var userEntryWeight = prompt("please enter a numba");
+  	loseWeight(userEntryDog, userEntryWeight);
+  	alert(userEntryDog + " now weighs " + fido.weight);
+
+  </script>
+</head>
+
+<body>
+  
+</body>
+</html>

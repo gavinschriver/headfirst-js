@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+
+      window.onload = init;
+
+     function init () {
+        var actionButtons = document.getElementsByClassName("actionButton");
+        for (let i = 0; i < actionButtons.length; i++) {
+            actionButtons[i].onclick = takeAction;
+        }
+      };
+
+      function takeAction (eventObject) {
+        var button = eventObject.target;
+        var buttonNumber = button.id;
+        setTimeout(alertNotice, 4000, buttonNumber);
+      }
+
+      function alertNotice (buttonNumber) {
+          alert(`You pushed button # ${buttonNumber} like, 4 seconds ago`);
+      }
+
+    </script>
+  </head>
+  <body>
+      <section id="buttonList">
+        <input type="button" class="actionButton" id="1" value="Button 1!">
+        <input type="button" class="actionButton" id="2" value="Button 2!">
+        <input type="button" class="actionButton" id="3" value="Button 3!">
+        <input type="button" class="actionButton" id="4" value="Button 4!">
+    </section>
+</body>
+</html>
