@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- applying some ideas from Ch 10 of headfirst JS book in a v unruly fasion-->
+    <script>
+      const arrowFunction = (singleParam) => singleParam * 2;
+
+      const arrowFunctionNoParam = () => {
+          alert(`let's assess the situation`.substring(6, 9));
+      }
+
+      const myArrayToSort = [1, 7, 13, 2];
+
+      const arrayWithFunctionsAsValues = [
+        arrowFunction,
+        (a, b) => a - b,
+        function () {
+          let phrase = `ya mama`;
+          return phrase;
+        },
+
+      ];
+
+      console.log(arrayWithFunctionsAsValues[0](3));
+      console.log(myArrayToSort.sort(arrayWithFunctionsAsValues[1]));
+      console.log(arrayWithFunctionsAsValues[2]().replace('mama', 'daddy'));
+      alert(arrowFunctionNoParam);
+      
+    </script>
+  </head>
+  <body></body>
+</html>
